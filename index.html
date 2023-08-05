@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <i class="fa-brands fa-codepen"></i>
+            <h1>Portafolio Personal</h1>
+        </div>
+          <ul class="menu">
+            <li><a href="#"  class="active">Inicio</a></li>
+            <li><a href="#soy">Quien Soy</a></li>
+            <li><a href="#Portafolio">Portafolio</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="info-content">
+          <h1>Diego <span>Sandi</span> Hernandez</h1>
+           <p>Diego Sandí Hernández es un estudiante apasionado de la programación con tres años de experiencia. Es talentoso, creativo y tiene habilidades sólidas en diversos lenguajes. Es trabajador, colaborativo y siempre está dispuesto a aprender y mejorar. Un activo valioso para cualquier proyecto de desarrollo.</p>
+           <a download href="https://adminmepcr-my.sharepoint.com/:i:/r/personal/119270905_est_mep_go_cr/Documents/119270905_Curriculum-1.jpg?csf=1&web=1&e=8v6elh"><button class="download-cv">Descargar CV</button></a>
+        </div>
+        <img src="./imagenes/imagen diego1 (2).jpg" alt="">
+      </main>
+    </div>
+    <section id="soy" class="soy">
+      <div class="about">
+        <img src="./imagenes/imagen diego1 (2).jpg" alt="">
+        <div class="about-info">
+          <h2>Acerca de mí</h2>
+          <div class="content"></div>
+          <p>Yo soy un estudiante apasionado y dedicado en el campo de la programación. Con tres años de experiencia, he demostrado un progreso significativo en mis habilidades y conocimientos. Mi interés por la tecnología y la resolución de problemas me ha llevado a desarrollar un conjunto impresionante de aptitudes en diversos lenguajes de programación y áreas relacionadas.</p>
+          <p>Me destaco por mi capacidad para abordar desafíos complejos con creatividad y perseverancia. Mi habilidad para analizar problemas de manera lógica y estructurada me permite encontrar soluciones eficientes y efectivas. Siempre estoy dispuesto a investigar y aprender nuevas tecnologías, manteniéndome actualizado con las últimas tendencias en el mundo de la programación.</p>
+          <p class="hidden">Además de mis habilidades técnicas, soy un estudiante curioso y abierto a aprender de mis errores, lo que me permite mejorar continuamente y perfeccionar mis habilidades de programación. Mi pasión por la programación me impulsa a buscar oportunidades para aplicar mis conocimientos en proyectos personales y colaborativos, lo que refuerza aún más mi experiencia.<br><br>
+          En resumen, soy un estudiante talentoso, proactivo y confiable en el campo de la programación. Mi trayectoria de tres años en este campo ha solidificado mi comprensión y experiencia, lo que me convierte en un recurso valioso para cualquier proyecto relacionado con la tecnología y el desarrollo de software.</p>
+          <button id="read-more-btn" class="download-cv">Leer más</button>
+        </div>
+      </div>
+    </section>
+
+      
+    <section id="Portafolio" class="Portafolio">
+      <div class="portfolio">
+
+          <div class="divider"></div>
+
+        <section class="trabajos" id="trabajos">
+          <h2>Mis Trabajos</h2>
+  
+          <nav>
+              <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+              <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Diseño</a>
+              <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Programación</a>
+              <a href="javascript:void(0)" class="" id="animaciones" onclick="verCategoria('animaciones')">Recursos</a>
+          </nav>
+          <div class="container">
+            <div class="row">
+              <div class="card">
+                <div class="item disenio">
+                  <div class="card__img"></div>
+                  <div class="card__title">
+                    <h2>Proyectos de Diseño</h2>
+                  </div>
+                  <div class="card__proyect-links">
+                      <i class="fab fa-github"></i>
+                    </a>
+                      <i class="fas fa-globe-asia"></i>
+                    </a>
+                      <i class="fas fa-code"></i>
+                    </a>
+                  </div>
+                  <div class="button-content">
+                    <button class="project-details-button download-cv">
+                      <a href="https://www.behance.net/diegosh">Enlace del proyecto</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="card">
+                <div class="item programacion">
+                  <div class="card__img"></div>
+                  <div class="card__title">
+                    <h2>Proyectos de Programacion</h2>
+                  </div>
+                  <div class="card__proyect-links">
+                      <i class="fab fa-github"></i>
+                    </a>
+                      <i class="fas fa-globe-asia"></i>
+                    </a>
+                      <i class="fas fa-code"></i>
+                    </a>
+                  </div>
+                  <div class="button-content">
+                    <button class="project-details-button download-cv">
+                      <a href="https://github.com/CostaHernandez?tab=projects">Enlace del proyecto</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="card">
+                <div class="item animaciones">
+                  <div class="card__img"></div>
+                  <div class="card__title">
+                    <h2>Proyectos de Recursos</h2>
+                  </div>
+                  <div class="card__proyect-links">
+                      <i class="fab fa-github"></i>
+                    </a>
+                      <i class="fas fa-globe-asia"></i>
+                    </a>
+                      <i class="fas fa-code"></i>
+                    </a>
+                  </div>
+                  <div class="button-content">
+                    <button class="project-details-button download-cv">
+                      <a href="https://codepen.io/Diego-Hernandez-the-flexboxer">Enlace de Recursos</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="row">
+              <!-- Add three more cards here with different content -->
+            </div>
+          
+            <div class="row">
+              <!-- Add three more cards here with different content -->
+            </div>
+          </div>
+          
+    </section>
+      <div class="linea"></div>
+      <!-- sección habilidades -->
+    <section class="habilidades" id="habilidades">
+      <div class="contenedor-habi">
+          <h2>Habilidades</h2>
+          <div class="fila">
+              <div class="col">
+                  <div class="score">
+                      <div class="box">
+                          <div class="chart" data-percent="95">
+                              95%
+                          </div>
+                          <h2>HTML & CSS</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="score">
+                      <div class="box">
+                          <div class="chart" data-percent="90">
+                              90%
+                          </div>
+                          <h2>BOOSTRAP</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="score">
+                      <div class="box">
+                          <div class="chart" data-percent="75">
+                              75%
+                          </div>
+                          <h2>JAVASCRIPT</h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="fila">
+              <div class="col">
+                  <div class="score">
+                      <div class="box">
+                          <div class="chart" data-percent="70">
+                              70%
+                          </div>
+                          <h2>MYSQL</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="score">
+                      <div class="box">
+                          <div class="chart" data-percent="85">
+                              85%
+                          </div>
+                          <h2>Angular</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="score">
+                      <div class="box">
+                          <div class="chart" data-percent="90">
+                              90%
+                          </div>
+                          <h2>PHOTOSHOP</h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <div class="linea"></div>
+
+  <section id="Contacto" class="Contacto">
+      <div class="contact-section">
+        <div class="contact-heading">
+          <h2>Mantenerse en contacto</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="container-contact">
+          <img src="./imagenes/imagen diego1 (2).jpg" alt="">
+          <div class="contact-form">
+            <h4>Envíeme un mensaje...</h4>
+            <form action="https://formsubmit.co/diegosandihernandez@gmail.com" method="POST" class="form-group">
+              <input type="text" name="text" placeholder="Nombre" class="input" required>
+              <input type="email" name="email" placeholder="Email" class="input" required>
+              <textarea name="email" name="email" placeholder="Coloque su mensaje aquí..." ></textarea>
+              <button type="submit" class="project-details-button download-cv">Enviar mensaje</button>
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+              <input type="hidden" name="_captcha" value="false">
+            </form>
+            <div class="info">
+              <h3>Email:</h3>
+              <p>diegosandihernandez@gmail.com</p>
+          </div>
+          <div class="info">
+              <h3>Teléfono:</h3>
+              <p>+506 62205769</p>
+          </div>
+          <div class="info">
+              <h3>País</h3>
+              <p>Costa Rica</p>
+          </div>
+          <div class="info">
+              <h3>Provincia:</h3>
+              <p>San jose</p>
+          </div>
+      </div>
+          </div>
+        </div>
+      </div>
+  </section>
+      <footer class="footer"> 
+        <div class="footer-content">
+          <h2>Diego Sandi Hernandez</h2>
+          <h5>Estudiante</h5>
+        </div>
+    <div class="sotial-networks">
+        <a href="https://www.instagram.com/diego34_hernandez/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCFj2S6FtLqkfI2Fq5MoCzvA"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://github.com/CostaHernandez"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/diego.dandohernandez"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+</header>
+
+      <script src="./javascript.js"></script>
+    </body>
